@@ -52,9 +52,10 @@ body {
 }
 .assignment-links {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-evenly;
   width: 100%;
   padding: 20px;
 
@@ -71,14 +72,23 @@ body {
 .assignment-link {
   /* width: 200px; */
 
-  padding: 20px;
+  flex: 1;
+  max-width: 300px;
+  background-color: lightblue;
   text-align: center;
+  padding: 20px;
 }
 
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
+  .assignment-links {
+    padding: 40px;
+  }
+
   .assignment-link {
     width: 45%;
+
+    /* max-width: none; */
   }
   .name {
     font-size: 40px;
@@ -88,5 +98,6 @@ body {
 @media (max-width: 480px) {
   .assignment-link {
     width: 100%;
+    flex-basis: 100%;
   }
 }
