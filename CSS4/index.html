@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS4</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="mainContainer">
+      <!-- start of logo side container -->
+      <div class="logoSideContainer">
+        <div class="logoSideContainerContent">
+          <img src="Logo.png" alt="logo" class="logo" />
+          <div class="textDiv">
+            <h1>For Individuals</h1>
+            <p class="pText4LargeScreen">
+              Start benefiting from the wellnesss experience. For companies
+              looking on increasing productivity, and improving organization
+              wellness.
+            </p>
+            <p class="pText4SmallScreen">
+              Inspiring wholesome harmony for the mind, body and spirit, for
+              everyone, everywhere.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end of logo side container -->
+
+      <!-- hey there! -->
+
+      <!-- start of form side container -->
+
+      <div class="formSideContainer">
+        <!-- start of form element -->
+        <form class="formContainer">
+          <!-- form fields -->
+          <div class="formFields">
+            <div label="First Name" class="fieldsDiv">
+              <label for="firstName" class="fieldsLabel">First Name</label
+              ><input
+                placeholder="First Name"
+                class="fieldsInput"
+                name="firstName"
+              />
+            </div>
+
+            <div label="Last Name" class="fieldsDiv">
+              <label for="lastName" class="fieldsLabel">Last Name</label
+              ><input
+                placeholder="Last Name"
+                class="fieldsInput"
+                name="lastName"
+              />
+            </div>
+
+            <div label="Gender" class="fieldsDiv">
+              <label for="gender" class="fieldsLabel">Gender</label>
+              <div class="genderWrapper">
+                <select name="gender" id="gender" class="genderSelect">
+                  <option value="">Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div label="Date of Birth" class="fieldsDiv">
+              <label for="dob" id="field-:r4:-label" class="fieldsLabel"
+                >Date of Birth</label
+              ><input
+                max="2013-01-18"
+                id="dob"
+                class="fieldsInput"
+                type="date"
+                name="dob"
+              />
+            </div>
+
+            <div label="Weight" class="fieldsDiv">
+              <label for="weight" class="fieldsLabel">Weight (KG)</label
+              ><input
+                placeholder="Enter Weight"
+                class="fieldsInput"
+                name="weight"
+              />
+            </div>
+
+            <div label="Height" class="fieldsDiv">
+              <label for="height" class="fieldsLabel">Height (CM)</label
+              ><input
+                placeholder="Enter Height"
+                class="fieldsInput"
+                name="height"
+              />
+            </div>
+
+            <div label="Activity" class="Activity-Password">
+              <label for="activity" class="fieldsLabel">Activity Level</label>
+              <select name="activity" id="activity" class="activitySelect">
+                <option value="">Select here</option>
+              </select>
+            </div>
+
+            <div label="Password" class="Activity-Password">
+              <label for="password" class="fieldsLabel">Password</label
+              ><input
+                placeholder="Password"
+                autocomplete="current-password"
+                class="fieldsInput"
+                type="password"
+                name="password"
+              />
+            </div>
+            <!--  -->
+          </div>
+
+          <!-- form button -->
+          <button type="submit" class="regBtn">Register</button>
+
+          <!-- form text -->
+          <p class="formText">
+            By clicking Register, you agree to our
+            <a href="/">Terms of Use</a> and our <a href="/">Privacy Policy</a>
+          </p>
+        </form>
+        <!-- end of form element -->
+      </div>
+      <!-- end of form side container -->
+    </main>
+  </body>
+</html>

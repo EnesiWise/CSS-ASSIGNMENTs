@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  background-color: rgb(246, 251, 249);
+  font-family: "Montserrat", serif;
+}
+
+.mainContainer {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  min-height: auto;
+}
+
+.logoSideContainer {
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 0%;
+  padding: 2rem;
+  /* flex-direction: column; */
+  /* display: none; */
+}
+@media screen and (min-width: 992px) {
+  .logoSideContainer {
+    display: flex;
+  }
+  .pText4LargeScreen {
+    display: block;
+  }
+  .pText4SmallScreen {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .logoSideContainer {
+    padding: 2rem 0;
+
+    /* flex: none;
+    width: 100%; */
+  }
+  .pText4LargeScreen {
+    display: none;
+  }
+  .pText4SmallScreen {
+    display: block;
+    font-weight: 300;
+  }
+  .logoSideContainerContent {
+    position: relative;
+    bottom: 14px;
+    right: 10px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.logoSideContainerContent {
+  position: relative;
+}
+.logo {
+  width: 77.33px;
+  height: 80px;
+  top: 205px;
+  left: 140px;
+}
+.textDiv {
+  width: 390px;
+  h1 {
+    font-weight: 700;
+  }
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* FORM SIDE CONTAINER */
+.formSideContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 1 0%;
+  background: #ffffff;
+  padding: 2rem;
+
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 48rem;
+
+  background-color: #ffffff;
+}
+
+.formFields {
+  display: grid;
+  gap: 1.5rem;
+
+  background-color: #ffffff;
+}
+@media screen and (min-width: 48em) {
+  .formFields {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+}
+.fieldsDiv {
+  width: 100%;
+  position: relative;
+
+  background-color: #ffffff;
+}
+.fieldsLabel {
+  display: block;
+  text-align: start;
+  font-size: 0.875rem;
+  margin-inline-end: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  opacity: 1;
+
+  background-color: #ffffff;
+}
+.fieldsInput {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  border-radius: 2px;
+  min-width: 0px;
+  outline: transparent solid 2px;
+  border-width: 1px;
+  border-style: solid;
+
+  background-color: #ffffff;
+}
+.fieldsInput:focus {
+  border: 1.5px solid rgb(43, 198, 149);
+}
+.genderWrapper {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+.genderSelect {
+  padding-inline-end: 2rem;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  padding-inline-start: 1rem;
+  border-radius: 2px;
+  outline: none;
+
+  background-color: #ffffff;
+}
+.genderSelect:focus {
+  border: 1.5px solid rgb(43, 198, 149);
+}
+
+.Activity-Password {
+  width: 100%;
+  position: relative;
+
+  background-color: #ffffff;
+}
+@media screen and (min-width: 48em) {
+  .Activity-Password {
+    grid-column: span 2;
+  }
+}
+.activitySelect {
+  padding-inline-end: 2rem;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  padding-inline-start: 1rem;
+  border-radius: 2px;
+  outline: none;
+
+  background-color: #ffffff;
+}
+.activitySelect:focus {
+  border: 1.5px solid rgb(43, 198, 149);
+}
+
+.regBtn {
+  font-weight: 500;
+
+  height: 3rem;
+  width: 100%;
+  min-width: 2.5rem;
+  font-size: 0.875rem;
+  border-radius: 2px;
+  background: rgb(43, 198, 149);
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.formText {
+  background-color: #ffffff;
+  font-size: 11px;
+  text-align: center;
+  margin-top: -15px;
+  a {
+    color: rgb(43, 198, 149);
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+}
