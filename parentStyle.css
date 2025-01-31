@@ -32,17 +32,26 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  /* padding: 20px; */
+  flex-wrap: wrap;
+  gap: 10px;
+
+  padding: 20px;
+}
+.name {
+  font-size: 50px;
 }
 .alt-id {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 10px;
 }
 .below-text {
   margin-top: 20px;
+  font-size: 1.5rem;
 }
 .assignment-links {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-evenly;
   width: 100%;
   padding: 20px;
@@ -54,5 +63,27 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     border: 2px solid white;
+  }
+}
+.assignment-link {
+  /* width: 200px; */
+
+  padding: 20px;
+  text-align: center;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .assignment-link {
+    width: 45%;
+  }
+  .name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .assignment-link {
+    width: 100%;
   }
 }
