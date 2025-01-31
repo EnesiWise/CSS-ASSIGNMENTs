@@ -37,12 +37,14 @@ body {
 
   padding: 20px;
 }
+
 .name {
-  font-size: 50px;
+  font-size: 3rem;
 }
 .alt-id {
   font-size: 2rem;
   margin-top: 10px;
+  font-weight: bold;
 }
 .below-text {
   margin-top: 20px;
@@ -58,11 +60,12 @@ body {
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     background-color: #ff9a9e;
     padding: 10px 20px;
     border-radius: 5px;
     border: 2px solid white;
+    font-weight: bold;
   }
 }
 .assignment-link {
