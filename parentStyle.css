@@ -26,7 +26,7 @@ body {
 }
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,44 +35,44 @@ body {
   flex-wrap: wrap;
   gap: 10px;
 
-  padding: 20px;
+  padding: 5vw;
 }
 
 .name {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 .alt-id {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-top: 10px;
   font-weight: bold;
 }
 .below-text {
   margin-top: 20px;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 .assignment-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  width: 100%;
-  padding: 20px;
+  gap: 15px;
+  /* width: 100%;
+  padding: 20px; */
 
   a {
     text-decoration: none;
     color: white;
     background-color: #ff9a9e;
-    padding: 10px 20px;
+    padding: 12px 5vw;
     border-radius: 5px;
     border: 2px solid white;
     font-weight: bold;
+
+    font-size: clamp(1rem, 2vw, 1.2rem);
   }
 }
 .assignment-link {
-  /* width: 200px; */
-
-  flex: 1;
+  flex: 1 1 45%;
   max-width: 300px;
   background-color: lightblue;
   text-align: center;
@@ -80,24 +80,16 @@ body {
 }
 
 /* Adjust for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+
   .assignment-links {
-    padding: 40px;
+    flex-direction: column;
   }
 
   .assignment-link {
-    width: 45%;
-
-    /* max-width: none; */
-  }
-  .name {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .assignment-link {
-    width: 100%;
-    flex-basis: 100%;
+    flex: 1 1 100%;
   }
 }
