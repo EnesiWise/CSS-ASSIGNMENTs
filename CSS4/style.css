@@ -147,6 +147,7 @@ p {
   border-style: solid;
   border: 1px solid grey;
   background-color: #ffffff;
+  color: black;
 }
 .fieldsInput:focus {
   border: 1.5px solid rgb(43, 198, 149);
