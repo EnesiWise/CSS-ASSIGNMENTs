@@ -173,7 +173,7 @@ p {
 }
 
 /*  */
-.calenderIconContainer {
+/* .calenderIconContainer {
   i {
     position: absolute;
     right: 10px;
@@ -185,7 +185,7 @@ p {
 }
 .calenderIconContainer input:focus + i {
   opacity: 0;
-}
+} */
 /*  */
 
 .Activity-Password {
