@@ -6,7 +6,9 @@ body {
 
   line-height: inherit;
 }
-
+a {
+  text-decoration: none;
+}
 .parent {
   margin: 0 auto;
   text-align: center;
