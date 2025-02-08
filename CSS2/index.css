@@ -47,7 +47,13 @@ body {
     margin: 0 15rem;
   }
 }
-
+@media screen and (max-width: 500px) {
+  .text-container {
+    br {
+      display: none;
+    }
+  }
+}
 /* GREY PART */
 .grey-part {
   flex: 1;
