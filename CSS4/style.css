@@ -145,7 +145,7 @@ p {
   outline: transparent solid 2px;
   border-width: 1px;
   border-style: solid;
-
+  border: 1px solid grey;
   background-color: #ffffff;
 }
 .fieldsInput:focus {
@@ -164,6 +164,7 @@ p {
   padding-inline-start: 1rem;
   border-radius: 2px;
   outline: none;
+  border: 1px solid grey;
 
   background-color: #ffffff;
 }
@@ -190,7 +191,7 @@ p {
   padding-inline-start: 1rem;
   border-radius: 2px;
   outline: none;
-
+  border: 1px solid grey;
   background-color: #ffffff;
 }
 .activitySelect:focus {
