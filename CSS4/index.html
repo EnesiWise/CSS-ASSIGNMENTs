@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -74,16 +77,21 @@
               </div>
             </div>
 
-            <div label="Date of Birth" class="fieldsDiv">
+            <div label="Date of Birth" class="fieldsDiv calenderIconContainer">
               <label for="dob" id="field-:r4:-label" class="fieldsLabel"
                 >Date of Birth</label
-              ><input
+              >
+              <input
                 max="2013-01-18"
                 id="dob"
                 class="fieldsInput"
-                type="date"
                 name="dob"
+                type="text"
+                placeholder="Select here"
+                onfocus="(this.type='date')"
+                onblur="if(!this.value)this.type='text'"
               />
+              <i class="fa fa-calendar"></i>
             </div>
 
             <div label="Weight" class="fieldsDiv">

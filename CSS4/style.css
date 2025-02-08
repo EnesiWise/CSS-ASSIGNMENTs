@@ -172,6 +172,22 @@ p {
   border: 1.5px solid rgb(43, 198, 149);
 }
 
+/*  */
+.calenderIconContainer {
+  i {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+  }
+}
+.calenderIconContainer input:focus + i {
+  opacity: 0;
+}
+/*  */
+
 .Activity-Password {
   width: 100%;
   position: relative;
